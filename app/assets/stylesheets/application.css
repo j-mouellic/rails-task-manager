@@ -1,15 +1,107 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&display=swap');
+
+ body{
+  margin: 0;
+  padding: 200px 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #edf6f9;
+  color: #004b6e;
+  font-family: Montserrat;
+ }
+
+ li{
+  list-style: none;
+ }
+
+ a{
+  text-decoration: none;
+  /* display: block; */
+ }
+
+ h1{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 100;
+  letter-spacing: 2px;
+ }
+
+ .wrapper{
+  margin: 0 auto;
+  padding: 24px;
+  width: 700px;
+  text-align: center;
+  background-color: #83c5be;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.5),
+      -4px -4px 10px rgba(255, 255, 255, 0.7);
+ }
+
+ .center-items{
+  text-align: left;
+  color: #fff;
+  margin: 32px 16px;
+ }
+
+ .center-items ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+ }
+
+ .center-items ul li a{
+  color: white;
+  margin-left: 12px;
+  font-size: 18px;
+  transition: ease 0.3s;
+ }
+
+ .center-items ul li a:hover{
+  color: #004b6e;
+  transition: ease 0.3s;
+ }
+
+ .btn-new-task{
+  font-family: Mulish;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #004b6e;
+  color: #fff;
+  transition: ease 0.3s;
+ }
+
+ .btn-new-task:hover{
+  background-color: white;
+  color: #004b6e;
+  transition: ease 0.3s;
+ }
+
+ input[type="checkbox"] {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #004b6e;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #004b6e;
+  border-color: #004b6e;
+}
+
+input[type="checkbox"]:checked + a{
+  text-decoration-line: line-through;
+  color: #004b6e;
+}
+
+
+.input{
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
